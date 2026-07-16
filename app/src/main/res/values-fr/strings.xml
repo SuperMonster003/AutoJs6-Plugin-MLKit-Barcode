@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plugin_description">Scanner de codes-barres sur l'appareil Google ML Kit pour AutoJs6</string>
+</resources>

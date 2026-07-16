@@ -1,0 +1,10 @@
+{
+  "repo_url": "https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode",
+  "mlkit_barcode_scanning_url": "https://developers.google.com/ml-kit/vision/barcode-scanning/android",
+  "google_mlkit_barcode_dependency": "com.google.mlkit:barcode-scanning:17.3.0",
+  "plugin_action": "org.autojs.plugin.MLKIT_BARCODE",
+  "plugin_id": "mlkit-barcode",
+  "plugin_engine": "mlkit-barcode",
+  "supported_formats": "QR_CODE, AZTEC, DATA_MATRIX, PDF417,\nCODE_128, CODE_39, CODE_93, CODABAR,\nEAN_13, EAN_8, ITF, UPC_A, UPC_E",
+  "result_fields": "`rawValue`, `displayValue`, `rawBytes`, `formatName`, `valueTypeName`, `boundingBox`, `cornerPoints`, `structuredJson`"
+}

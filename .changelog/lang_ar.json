@@ -1,0 +1,28 @@
+{
+  "changelog_label_hint": "تنبيه",
+  "changelog_label_feature": "اضافة",
+  "changelog_label_fix": "اصلاح",
+  "changelog_label_improvement": "تحسين",
+  "changelog_label_dependency": "اعتماد",
+  "$data": {
+    "v1.0.0": {
+      "released_date": "2026/07/05",
+      "feature": [
+        "تمت اضافة خدمة مكون ML Kit Barcode مع معرف `mlkit-barcode` والمحرك `mlkit-barcode`",
+        "تمت اضافة اكتشاف المضيف والاستدعاء عبر `org.autojs.plugin.MLKIT_BARCODE`",
+        "تمت اضافة API اكتشاف الرموز الشريطية `detect(imageFd, options)` المبنية على واصفات ملفات الصور",
+        "تمت اضافة مرشحات تنسيق الرموز الشريطية, وحدود عدد النتائج, وخيار ML Kit `enableAllPotentialBarcodes`",
+        "يتم ارجاع `rawValue`, و `displayValue`, و `rawBytes`, واسماء التنسيقات, واسماء انواع القيم, والمربعات المحيطة, ونقاط الزوايا, و JSON للحمولة المنظمة",
+        "تمت اضافة بيانات المكون وتعليمات الاستخدام المترجمة للاسبانية/الفرنسية/الروسية/العربية/اليابانية/الكورية/الانجليزية/الصينية المبسطة/الصينية التقليدية في هونغ كونغ/الصينية التقليدية في تايوان",
+        "تمت اضافة بناء APK مقسم حسب ABI ل `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` و APK `universal`"
+      ],
+      "improvement": [
+        "تبقى اعتمادات Google ML Kit barcode scanning, والمكتبات الاصلية, واصول النموذج خارج APK مضيف AutoJs6",
+        "تتضمن اسماء ملفات APK للاصدار رقم النسخة ومتغير ABI"
+      ],
+      "dependency": [
+        "تم دمج `com.google.mlkit:barcode-scanning:17.3.0`"
+      ]
+    }
+  }
+}

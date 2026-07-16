@@ -1,0 +1,28 @@
+{
+  "changelog_label_hint": "Nota",
+  "changelog_label_feature": "Nueva",
+  "changelog_label_fix": "Correccion",
+  "changelog_label_improvement": "Mejora",
+  "changelog_label_dependency": "Dependencia",
+  "$data": {
+    "v1.0.0": {
+      "released_date": "2026/07/05",
+      "feature": [
+        "Se agrego el servicio de complemento ML Kit Barcode con ID `mlkit-barcode` y motor `mlkit-barcode`",
+        "Se agrego descubrimiento e invocacion por el anfitrion mediante `org.autojs.plugin.MLKIT_BARCODE`",
+        "Se agrego la API de deteccion de codigos de barras `detect(imageFd, options)` basada en descriptores de archivo de imagen",
+        "Se agregaron filtros de formato de codigo de barras, limites de resultados y la opcion de ML Kit `enableAllPotentialBarcodes`",
+        "Se devuelven `rawValue`, `displayValue`, `rawBytes`, nombres de formato, nombres de tipo de valor, rectangulos delimitadores, puntos de esquina y JSON de carga util estructurada",
+        "Se agregaron metadatos del complemento e instrucciones de uso localizadas para espanol/frances/ruso/arabe/japones/coreano/ingles/chino simplificado/chino tradicional de Hong Kong/chino tradicional de Taiwan",
+        "Se agregaron compilaciones APK separadas por ABI para `arm64-v8a`, `armeabi-v7a`, `x86_64`, `x86` y un APK `universal`"
+      ],
+      "improvement": [
+        "Las dependencias de Google ML Kit barcode scanning, las bibliotecas nativas y los recursos de modelo permanecen fuera del APK anfitrion de AutoJs6",
+        "Los nombres de APK de publicacion incluyen la version y la variante ABI"
+      ],
+      "dependency": [
+        "Integrado `com.google.mlkit:barcode-scanning:17.3.0`"
+      ]
+    }
+  }
+}

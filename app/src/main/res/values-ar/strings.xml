@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="plugin_description">مكون Google ML Kit لمسح الرموز الشريطية على الجهاز في AutoJs6</string>
+</resources>

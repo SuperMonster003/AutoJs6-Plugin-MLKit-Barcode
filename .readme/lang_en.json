@@ -1,0 +1,41 @@
+{
+  "$name": "English",
+  "text_current_lowercase": "current",
+  "text_plugin_synopsis": "Google ML Kit barcode scanner plugin for AutoJs6",
+  "h3_languages_with_ascii": "Languages",
+  "p_languages_all_supported_for_readme": "The current README.md supports the following languages",
+  "h3_introduction": "Introduction",
+  "p_introduction": "The AutoJs6 ML Kit Barcode plugin provides Google ML Kit powered on-device barcode detection for AutoJs6. It keeps ML Kit dependencies, native libraries, and model assets outside the host APK.",
+  "h3_functions": "Features",
+  "features": [
+    "Provides the `mlkit-barcode` plugin service with plugin ID `mlkit-barcode` and engine `mlkit-barcode`.",
+    "Supports host discovery and invocation through `org.autojs.plugin.MLKIT_BARCODE`.",
+    "Supports barcode format filters, maximum result limits, and ML Kit potential barcode detection.",
+    "Returns raw values, display values, raw bytes, format names, value type names, bounding boxes, corner points, and structured payload JSON.",
+    "Plugin metadata, usage instructions, README, and changelog are localized for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese.",
+    "Built on `{{ google_mlkit_barcode_dependency }}`."
+  ],
+  "h3_usage": "Usage",
+  "p_usage_service": "The host discovers the service through this action",
+  "p_usage_aidl": "Core AIDL method",
+  "p_usage_options": "`BarcodeOptions` supports",
+  "usage_options": [
+    "`formats`: List of formats to detect. Empty or `ALL_FORMATS` scans all formats.",
+    "`maxResults`: Maximum number of returned results. The service caps this at 128.",
+    "`enableAllPotentialBarcodes`: Enables ML Kit potential barcode detection."
+  ],
+  "h3_supported_formats": "Supported Formats",
+  "p_supported_formats": "Common format names include",
+  "h3_result": "Results",
+  "p_result_fields": "Each `BarcodeResult` can include these fields",
+  "h3_release_history": "Release History",
+  "h5_for_more_release_history": "For more release history",
+  "h3_build": "Build",
+  "text_release_build": "Release build",
+  "p_build_params": "Build parameters come from `version.properties`; the current minimum SDK is 24 and target SDK is 36",
+  "h3_resource_layout": "Resource Layout",
+  "p_resource_layout": "`strings.xml` contains localized plugin descriptions; `plugin_instruction.md` contains usage instructions displayed by the host. README and CHANGELOG files are generated from JSON sources by `.python/generate_markdown.py`",
+  "h3_links": "Links",
+  "text_link_mlkit_barcode_scanning": "Google ML Kit Barcode Scanning documentation",
+  "text_link_repo": "Project repository"
+}

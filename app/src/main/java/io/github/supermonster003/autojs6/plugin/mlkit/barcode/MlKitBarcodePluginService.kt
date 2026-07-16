@@ -33,8 +33,8 @@ class MlKitBarcodePluginService : Service() {
     private val binder = object : IBarcodePlugin.Stub() {
         override fun getInfo(): PluginInfo {
             return PluginInfo().apply {
-                name = "ML Kit Barcode"
-                description = "Google ML Kit on-device barcode scanner for AutoJs6."
+                name = getString(R.string.app_name)
+                description = getString(R.string.plugin_description)
                 author = getString(R.string.plugin_author)
                 id = BuildConfig.PLUGIN_ID
                 engine = BuildConfig.PLUGIN_ENGINE
@@ -237,4 +237,3 @@ class MlKitBarcodePluginService : Service() {
         val SUPPORTED_ABIS = arrayOf("arm64-v8a", "armeabi-v7a", "x86", "x86_64")
     }
 }
-

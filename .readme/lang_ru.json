@@ -1,0 +1,41 @@
+{
+  "$name": "Русский",
+  "text_current_lowercase": "текущий",
+  "text_plugin_synopsis": "Плагин сканера штрихкодов Google ML Kit для AutoJs6",
+  "h3_languages_with_ascii": "Языки (Languages)",
+  "p_languages_all_supported_for_readme": "Текущий README.md поддерживает следующие языки",
+  "h3_introduction": "Введение",
+  "p_introduction": "Плагин AutoJs6 ML Kit Barcode предоставляет AutoJs6 распознавание штрихкодов на устройстве на базе Google ML Kit. Он хранит зависимости ML Kit, нативные библиотеки и ресурсы модели вне APK хоста.",
+  "h3_functions": "Возможности",
+  "features": [
+    "Предоставляет сервис плагина `mlkit-barcode` с ID `mlkit-barcode` и движком `mlkit-barcode`.",
+    "Поддерживает обнаружение и вызов хостом через `org.autojs.plugin.MLKIT_BARCODE`.",
+    "Поддерживает фильтры форматов штрихкодов, ограничение числа результатов и обнаружение потенциальных штрихкодов ML Kit.",
+    "Возвращает сырые значения, отображаемые значения, сырые байты, имена форматов, имена типов значений, ограничивающие прямоугольники, угловые точки и JSON структурированной нагрузки.",
+    "Метаданные плагина, инструкции, README и CHANGELOG локализованы на испанский/французский/русский/арабский/японский/корейский/английский/упрощенный китайский/традиционный китайский Гонконга/традиционный китайский Тайваня.",
+    "Основан на `{{ google_mlkit_barcode_dependency }}`."
+  ],
+  "h3_usage": "Использование",
+  "p_usage_service": "Хост обнаруживает сервис через этот action",
+  "p_usage_aidl": "Основной метод AIDL",
+  "p_usage_options": "`BarcodeOptions` поддерживает",
+  "usage_options": [
+    "`formats`: Список форматов для обнаружения. Пустой список или `ALL_FORMATS` сканирует все форматы.",
+    "`maxResults`: Максимальное число возвращаемых результатов. Сервис ограничивает значение 128.",
+    "`enableAllPotentialBarcodes`: Включает обнаружение потенциальных штрихкодов ML Kit."
+  ],
+  "h3_supported_formats": "Поддерживаемые форматы",
+  "p_supported_formats": "Распространенные имена форматов включают",
+  "h3_result": "Результаты",
+  "p_result_fields": "Каждый `BarcodeResult` может включать эти поля",
+  "h3_release_history": "История выпусков",
+  "h5_for_more_release_history": "Больше истории выпусков",
+  "h3_build": "Сборка",
+  "text_release_build": "Release сборка",
+  "p_build_params": "Параметры сборки берутся из `version.properties`; текущий минимальный SDK равен 24, целевой SDK равен 36",
+  "h3_resource_layout": "Структура ресурсов",
+  "p_resource_layout": "`strings.xml` содержит локализованные описания плагина; `plugin_instruction.md` содержит инструкции, отображаемые хостом. README и CHANGELOG создаются из JSON источников скриптом `.python/generate_markdown.py`",
+  "h3_links": "Ссылки",
+  "text_link_mlkit_barcode_scanning": "Документация Google ML Kit Barcode Scanning",
+  "text_link_repo": "Репозиторий проекта"
+}

@@ -1,0 +1,41 @@
+{
+  "$name": "العربية",
+  "text_current_lowercase": "الحالي",
+  "text_plugin_synopsis": "مكون Google ML Kit لمسح الرموز الشريطية في AutoJs6",
+  "h3_languages_with_ascii": "اللغات (Languages)",
+  "p_languages_all_supported_for_readme": "يدعم README.md الحالي اللغات التالية",
+  "h3_introduction": "مقدمة",
+  "p_introduction": "يوفر مكون AutoJs6 ML Kit Barcode اكتشاف الرموز الشريطية على الجهاز ل AutoJs6 باستخدام Google ML Kit. يحتفظ باعتمادات ML Kit, والمكتبات الاصلية, واصول النموذج خارج APK المضيف.",
+  "h3_functions": "الميزات",
+  "features": [
+    "يوفر خدمة المكون `mlkit-barcode` مع معرف المكون `mlkit-barcode` والمحرك `mlkit-barcode`.",
+    "يدعم اكتشاف المضيف والاستدعاء عبر `org.autojs.plugin.MLKIT_BARCODE`.",
+    "يدعم مرشحات تنسيقات الرموز الشريطية, وحدود عدد النتائج, واكتشاف الرموز الشريطية المحتملة في ML Kit.",
+    "يرجع القيم الخام, وقيم العرض, والبايتات الخام, واسماء التنسيقات, واسماء انواع القيم, والمربعات المحيطة, ونقاط الزوايا, و JSON للحمولة المنظمة.",
+    "بيانات المكون, وتعليمات الاستخدام, و README, و CHANGELOG مترجمة للاسبانية/الفرنسية/الروسية/العربية/اليابانية/الكورية/الانجليزية/الصينية المبسطة/الصينية التقليدية في هونغ كونغ/الصينية التقليدية في تايوان.",
+    "مبني على `{{ google_mlkit_barcode_dependency }}`."
+  ],
+  "h3_usage": "الاستخدام",
+  "p_usage_service": "يكتشف المضيف الخدمة عبر هذا action",
+  "p_usage_aidl": "طريقة AIDL الاساسية",
+  "p_usage_options": "يدعم `BarcodeOptions`",
+  "usage_options": [
+    "`formats`: قائمة التنسيقات المطلوب اكتشافها. القيمة الفارغة او `ALL_FORMATS` تفحص كل التنسيقات.",
+    "`maxResults`: اكبر عدد من النتائج المرجعة. تحد الخدمة هذه القيمة عند 128.",
+    "`enableAllPotentialBarcodes`: يفعل اكتشاف الرموز الشريطية المحتملة في ML Kit."
+  ],
+  "h3_supported_formats": "التنسيقات المدعومة",
+  "p_supported_formats": "تتضمن اسماء التنسيقات الشائعة",
+  "h3_result": "النتائج",
+  "p_result_fields": "يمكن ان يحتوي كل `BarcodeResult` على هذه الحقول",
+  "h3_release_history": "سجل الاصدارات",
+  "h5_for_more_release_history": "لمزيد من سجل الاصدارات",
+  "h3_build": "البناء",
+  "text_release_build": "بناء Release",
+  "p_build_params": "تاتي معاملات البناء من `version.properties`; الحد الادنى الحالي ل SDK هو 24 و SDK الهدف هو 36",
+  "h3_resource_layout": "بنية الموارد",
+  "p_resource_layout": "يحتوي `strings.xml` على اوصاف المكون المترجمة; يحتوي `plugin_instruction.md` على تعليمات الاستخدام المعروضة بواسطة المضيف. يتم توليد README و CHANGELOG من مصادر JSON بواسطة `.python/generate_markdown.py`",
+  "h3_links": "روابط",
+  "text_link_mlkit_barcode_scanning": "توثيق Google ML Kit Barcode Scanning",
+  "text_link_repo": "مستودع المشروع"
+}

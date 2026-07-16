@@ -1,0 +1,28 @@
+{
+  "changelog_label_hint": "Hint",
+  "changelog_label_feature": "Feature",
+  "changelog_label_fix": "Fix",
+  "changelog_label_improvement": "Improvement",
+  "changelog_label_dependency": "Dependency",
+  "$data": {
+    "v1.0.0": {
+      "released_date": "2026/07/05",
+      "feature": [
+        "Added the ML Kit Barcode plugin service with plugin ID `mlkit-barcode` and engine `mlkit-barcode`",
+        "Added host discovery and invocation through `org.autojs.plugin.MLKIT_BARCODE`",
+        "Added the `detect(imageFd, options)` barcode detection API based on image file descriptors",
+        "Added barcode format filters, maximum result limits, and the ML Kit `enableAllPotentialBarcodes` option",
+        "Returned `rawValue`, `displayValue`, `rawBytes`, format names, value type names, bounding boxes, corner points, and structured payload JSON",
+        "Added localized plugin metadata and usage instructions for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese",
+        "Added ABI split APK builds for `arm64-v8a`, `armeabi-v7a`, `x86_64`, `x86`, and a `universal` APK"
+      ],
+      "improvement": [
+        "Kept Google ML Kit barcode scanning dependencies, native libraries, and model assets outside the AutoJs6 host APK",
+        "Release APK filenames include the version and ABI variant"
+      ],
+      "dependency": [
+        "Integrated `com.google.mlkit:barcode-scanning:17.3.0`"
+      ]
+    }
+  }
+}

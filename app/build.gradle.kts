@@ -7,31 +7,31 @@ import java.util.Properties
 import java.util.TimeZone
 
 plugins {
+    id("org.autojs.build.utils")
+    id("org.autojs.build.versions")
+    id("org.autojs.build.signs")
+    id("org.autojs.build.jvm-convention")
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
 }
 
 val globalApplicationId = "io.github.supermonster003.autojs6.plugin.mlkit.barcode"
-val pluginVersionCode = 1
-val pluginVersionName = "1.0.0"
-val pluginVersionDate = SimpleDateFormat("MMM d, yyyy", Locale.US).apply {
-    timeZone = TimeZone.getTimeZone("GMT+08:00")
-}.format(Date())
+
 var isSignsValid = false
 
 android {
     namespace = globalApplicationId
-    compileSdk = 36
+    compileSdk = versions.sdkVersionCompile
 
     defaultConfig {
         applicationId = globalApplicationId
-        minSdk = 24
-        targetSdk = 36
 
-        versionCode = pluginVersionCode
-        versionName = pluginVersionName
+        minSdk = versions.sdkVersionMin
+        targetSdk = versions.sdkVersionTarget
 
-        buildConfigField("String", "VERSION_DATE", "\"$pluginVersionDate\"")
+        versionCode = versions.appVersionCode
+        versionName = versions.appVersionName
+
+        buildConfigField("String", "VERSION_DATE", "\"${utils.getDateString("MMM d, yyyy", "GMT+08:00")}\"")
         buildConfigField("String", "PLUGIN_ID", "\"mlkit-barcode\"")
         buildConfigField("String", "PLUGIN_ENGINE", "\"mlkit-barcode\"")
         buildConfigField("String", "PLUGIN_VARIANT", "\"default\"")
@@ -92,16 +92,8 @@ android {
         resValues = true
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlin {
-        jvmToolchain(17)
-    }
-
-    packaging {
+    @Suppress("DEPRECATION")
+    packagingOptions {
         jniLibs.useLegacyPackaging = true
         resources {
             pickFirsts += listOf(
@@ -167,9 +159,36 @@ dependencies {
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.21")
     implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:2.2.21")
+
     implementation("com.google.mlkit:barcode-scanning:17.3.0")
 }
 
-tasks.withType(JavaCompile::class.java).configureEach {
-    options.encoding = "UTF-8"
+tasks {
+    withType(JavaCompile::class.java) {
+        options.encoding = "UTF-8"
+    }
+
+    register<Copy>("appendDigestToReleasedFiles") {
+        description = "Appends CRC32 digest to released APK files"
+
+        val src = "release"
+        val dst = "${src}s"
+        val ext = utils.FILE_EXTENSION_APK
+
+        if (!file(src).isDirectory) {
+            return@register
+        }
+
+        from(src); into(dst); include("*.$ext")
+
+        rename { name ->
+            val abi = name.replace(Regex("^(?:.+?)-v${versions.appVersionName}-(.+?)(\\.$ext)$"), "$1")
+            val releasedFileNamePrefix = "${rootProject.name}-v${versions.appVersionName}-$abi"
+            utils.digestCRC32(file("${src}/$name")).let { digest ->
+                "$releasedFileNamePrefix-$digest.$ext"
+            }
+        }
+
+        doLast { println("Destination: ${file(dst)}") }
+    }
 }

@@ -1,0 +1,41 @@
+{
+  "$name": "简体中文",
+  "text_current_lowercase": "当前",
+  "text_plugin_synopsis": "用于 AutoJs6 的 Google ML Kit 条码扫描插件",
+  "h3_languages_with_ascii": "语言 (Languages)",
+  "p_languages_all_supported_for_readme": "当前 README.md 支持以下语言",
+  "h3_introduction": "简介",
+  "p_introduction": "AutoJs6 ML Kit Barcode 插件为 AutoJs6 提供基于 Google ML Kit 的端侧条码识别能力, 可在宿主 APK 外部独立携带 ML Kit 依赖, 原生库和模型资产.",
+  "h3_functions": "功能",
+  "features": [
+    "提供 `mlkit-barcode` 插件服务, 插件 ID 为 `mlkit-barcode`, 引擎为 `mlkit-barcode`.",
+    "支持通过 `org.autojs.plugin.MLKIT_BARCODE` 发现并调用插件.",
+    "支持按格式过滤条码, 限制最大返回数量, 以及启用 ML Kit 的潜在条码检测.",
+    "返回原始值, 显示值, 原始字节, 格式名称, 值类型名称, 外接矩形, 角点坐标和结构化载荷 JSON.",
+    "插件信息, 使用说明, README 与 CHANGELOG 均支持西班牙语/法语/俄语/阿拉伯语/日语/韩语/英语/简体中文/香港繁体/台湾繁体.",
+    "基于 `{{ google_mlkit_barcode_dependency }}`."
+  ],
+  "h3_usage": "使用说明",
+  "p_usage_service": "宿主通过以下 action 发现服务",
+  "p_usage_aidl": "核心 AIDL 方法",
+  "p_usage_options": "`BarcodeOptions` 支持",
+  "usage_options": [
+    "`formats`: 要识别的格式列表, 留空或包含 `ALL_FORMATS` 时扫描全部格式.",
+    "`maxResults`: 最大返回结果数, 服务端上限为 128.",
+    "`enableAllPotentialBarcodes`: 启用 ML Kit 潜在条码检测."
+  ],
+  "h3_supported_formats": "支持格式",
+  "p_supported_formats": "常用格式名称包括",
+  "h3_result": "返回结果",
+  "p_result_fields": "每个 `BarcodeResult` 可包含以下字段",
+  "h3_release_history": "发行历史",
+  "h5_for_more_release_history": "更多发行历史可参阅",
+  "h3_build": "构建",
+  "text_release_build": "Release 构建",
+  "p_build_params": "构建参数来自 `version.properties`, 当前最低 SDK 为 24, 目标 SDK 为 36",
+  "h3_resource_layout": "资源结构",
+  "p_resource_layout": "`strings.xml` 提供插件描述本地化; `plugin_instruction.md` 提供宿主侧展示的插件使用说明. README 与 CHANGELOG 由 `.python/generate_markdown.py` 根据 JSON 源文件生成",
+  "h3_links": "相关链接",
+  "text_link_mlkit_barcode_scanning": "Google ML Kit Barcode Scanning 文档",
+  "text_link_repo": "项目仓库"
+}
