@@ -1,6 +1,12 @@
+******
+
+### 릴리스 기록
+
+******
+
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `추가` 플러그인 ID `mlkit-barcode`, 엔진 `mlkit-barcode`인 ML Kit Barcode 플러그인 서비스 추가
 * `추가` `org.autojs.plugin.MLKIT_BARCODE`를 통한 호스트 검색 및 호출 추가
@@ -11,4 +17,6 @@
 * `추가` `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` 및 `universal` APK용 ABI 분리 빌드 추가
 * `개선` Google ML Kit barcode scanning 의존성, 네이티브 라이브러리, 모델 에셋을 AutoJs6 호스트 APK 외부에 유지
 * `개선` 릴리스 APK 파일 이름에 버전과 ABI 변형 포함
+* `개선` README 레이아웃과 Gradle 플랫폼 버전 관리 방식을 통일
+* `개선` 플러그인 설명을 간결하게 다듬고 다국어 리소스의 문장 부호를 통일
 * `의존성` `com.google.mlkit:barcode-scanning:17.3.0` 통합

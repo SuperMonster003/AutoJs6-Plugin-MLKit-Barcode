@@ -1,6 +1,12 @@
+******
+
+### 发行历史
+
+******
+
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `新增` ML Kit Barcode 插件服务, 插件 ID 为 `mlkit-barcode`, 引擎为 `mlkit-barcode`
 * `新增` 支持通过 `org.autojs.plugin.MLKIT_BARCODE` 发现并调用插件
@@ -11,4 +17,6 @@
 * `新增` 支持按 ABI 构建 APK, 包括 `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` 以及 `universal` 通用包
 * `优化` 将 Google ML Kit 条码扫描依赖, 原生库和模型资产保持在 AutoJs6 宿主 APK 外部
 * `优化` 发布 APK 文件名包含版本号和 ABI 变体
+* `优化` 统一 README 版式与 Gradle 平台版本管理方式
+* `优化` 精简插件描述并规范多语言资源中的标点符号
 * `依赖` 集成 `com.google.mlkit:barcode-scanning:17.3.0`

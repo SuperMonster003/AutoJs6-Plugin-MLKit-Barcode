@@ -1,7 +1,7 @@
 {
   "$name": "Español",
   "text_current_lowercase": "actual",
-  "text_plugin_synopsis": "Complemento de escaneo de codigos de barras Google ML Kit para AutoJs6",
+  "text_plugin_synopsis": "Escaneo de códigos de barras en el dispositivo con Google ML Kit",
   "h3_languages_with_ascii": "Idiomas (Languages)",
   "p_languages_all_supported_for_readme": "El README.md actual admite los siguientes idiomas",
   "h3_introduction": "Introduccion",

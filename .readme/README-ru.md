@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>Плагин сканера штрихкодов Google ML Kit для AutoJs6</p>
+  <p>Сканирование штрихкодов на устройстве с помощью Google ML Kit</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/commit/3f1ec5c271c17fd39af76b6bff20b1b047996ec9"><img alt="Created" src="https://img.shields.io/date/1783229834?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -115,7 +111,7 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `Новое` Добавлен сервис плагина ML Kit Barcode с ID `mlkit-barcode` и движком `mlkit-barcode`
 * `Новое` Добавлено обнаружение и вызов хостом через `org.autojs.plugin.MLKIT_BARCODE`
@@ -126,11 +122,13 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 * `Новое` Добавлены ABI split APK сборки для `arm64-v8a`, `armeabi-v7a`, `x86_64`, `x86` и APK `universal`
 * `Улучшение` Зависимости Google ML Kit barcode scanning, нативные библиотеки и ресурсы модели остаются вне APK хоста AutoJs6
 * `Улучшение` Имена release APK включают версию и вариант ABI
+* `Улучшение` Унифицировать оформление README и управление версиями платформы Gradle
+* `Улучшение` Сократить описание плагина и унифицировать пунктуацию в многоязычных ресурсах
 * `Зависимость` Интегрирован `com.google.mlkit:barcode-scanning:17.3.0`
 
 ##### Больше истории выпусков
 
-* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/.changelog/CHANGELOG-ru.md)
+* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/app/src/main/assets/doc/CHANGELOG-ru.md)
 
 ******
 

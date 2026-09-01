@@ -1,6 +1,12 @@
+******
+
+### Historique des versions
+
+******
+
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `Ajout` Ajout du service de plugin ML Kit Barcode avec l'ID `mlkit-barcode` et le moteur `mlkit-barcode`
 * `Ajout` Ajout de la decouverte et de l'appel par l'hote via `org.autojs.plugin.MLKIT_BARCODE`
@@ -11,4 +17,6 @@
 * `Ajout` Ajout de builds APK separes par ABI pour `arm64-v8a`, `armeabi-v7a`, `x86_64`, `x86` et un APK `universal`
 * `Amelioration` Conservation des dependances Google ML Kit barcode scanning, des bibliotheques natives et des assets de modele en dehors de l'APK hote AutoJs6
 * `Amelioration` Les noms des APK de publication incluent la version et la variante ABI
+* `Amelioration` Uniformiser la mise en page du README et la gestion des versions de la plateforme Gradle
+* `Amelioration` Simplifier la description du plugin et normaliser la ponctuation des ressources multilingues
 * `Dependance` Integration de `com.google.mlkit:barcode-scanning:17.3.0`

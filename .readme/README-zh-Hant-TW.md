@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>用於 AutoJs6 的 Google ML Kit 條碼掃描外掛</p>
+  <p>使用 Google ML Kit 的裝置端條碼掃描</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/commit/3f1ec5c271c17fd39af76b6bff20b1b047996ec9"><img alt="Created" src="https://img.shields.io/date/1783229834?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -115,7 +111,7 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `新增` ML Kit Barcode 外掛服務, 外掛 ID 為 `mlkit-barcode`, 引擎為 `mlkit-barcode`
 * `新增` 支援透過 `org.autojs.plugin.MLKIT_BARCODE` 探索並呼叫外掛
@@ -126,11 +122,13 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 * `新增` 支援依 ABI 建置 APK, 包括 `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` 以及 `universal` 通用包
 * `最佳化` 將 Google ML Kit 條碼掃描依賴, 原生程式庫和模型資產保持在 AutoJs6 宿主 APK 外部
 * `最佳化` 發佈 APK 檔名包含版本號和 ABI 變體
+* `最佳化` 統一 README 版式與 Gradle 平台版本管理方式
+* `最佳化` 精簡外掛描述並規範多語言資源中的標點符號
 * `依賴` 整合 `com.google.mlkit:barcode-scanning:17.3.0`
 
 ##### 更多發行歷史可參閱
 
-* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/.changelog/CHANGELOG-zh-Hant-TW.md)
+* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/app/src/main/assets/doc/CHANGELOG-zh-Hant-TW.md)
 
 ******
 

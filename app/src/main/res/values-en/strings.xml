@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">Google ML Kit on-device barcode scanner for AutoJs6</string>
+    <string name="plugin_description">On-device barcode scanning powered by Google ML Kit</string>
 </resources>

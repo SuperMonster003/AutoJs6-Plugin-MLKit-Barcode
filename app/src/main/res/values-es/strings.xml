@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">Escaner de codigos de barras en el dispositivo con Google ML Kit para AutoJs6</string>
+    <string name="plugin_description">Escaneo de códigos de barras en el dispositivo con Google ML Kit</string>
 </resources>

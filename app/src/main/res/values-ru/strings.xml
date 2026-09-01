@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">Сканер штрихкодов Google ML Kit на устройстве для AutoJs6</string>
+    <string name="plugin_description">Сканирование штрихкодов на устройстве с помощью Google ML Kit</string>
 </resources>

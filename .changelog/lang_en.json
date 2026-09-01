@@ -6,7 +6,7 @@
   "changelog_label_dependency": "Dependency",
   "$data": {
     "v1.0.0": {
-      "released_date": "2026/07/05",
+      "released_date": "2026/09/01",
       "feature": [
         "Added the ML Kit Barcode plugin service with plugin ID `mlkit-barcode` and engine `mlkit-barcode`",
         "Added host discovery and invocation through `org.autojs.plugin.MLKIT_BARCODE`",
@@ -18,7 +18,9 @@
       ],
       "improvement": [
         "Kept Google ML Kit barcode scanning dependencies, native libraries, and model assets outside the AutoJs6 host APK",
-        "Release APK filenames include the version and ABI variant"
+        "Release APK filenames include the version and ABI variant",
+        "Standardize the README layout and Gradle platform version management",
+        "Refine the plugin description and normalize punctuation in multilingual resources"
       ],
       "dependency": [
         "Integrated `com.google.mlkit:barcode-scanning:17.3.0`"

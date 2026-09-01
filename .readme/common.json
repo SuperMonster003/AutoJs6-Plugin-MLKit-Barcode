@@ -1,5 +1,8 @@
 {
   "repo_url": "https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode",
+  "repo_slug": "SuperMonster003/AutoJs6-Plugin-MLKit-Barcode",
+  "icon_alt": "autojs6-plugin-mlkit-barcode-ic-launcher",
+  "license_url": "{{ repo_url }}/blob/master/LICENSE",
   "mlkit_barcode_scanning_url": "https://developers.google.com/ml-kit/vision/barcode-scanning/android",
   "google_mlkit_barcode_dependency": "com.google.mlkit:barcode-scanning:17.3.0",
   "plugin_action": "org.autojs.plugin.MLKIT_BARCODE",

@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>AutoJs6 向け Google ML Kit バーコードスキャナープラグイン</p>
+  <p>Google ML Kit を利用したオンデバイスバーコードスキャン</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/commit/3f1ec5c271c17fd39af76b6bff20b1b047996ec9"><img alt="Created" src="https://img.shields.io/date/1783229834?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -115,7 +111,7 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `追加` プラグイン ID `mlkit-barcode`, エンジン `mlkit-barcode` の ML Kit Barcode プラグインサービスを追加
 * `追加` `org.autojs.plugin.MLKIT_BARCODE` によるホストからの検出と呼び出しを追加
@@ -126,11 +122,13 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 * `追加` `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` と `universal` APK の ABI 別ビルドを追加
 * `改善` Google ML Kit barcode scanning 依存関係, ネイティブライブラリ, モデルアセットを AutoJs6 ホスト APK の外側に保持
 * `改善` リリース APK ファイル名にバージョンと ABI バリアントを含めるように改善
+* `改善` README のレイアウトと Gradle プラットフォームのバージョン管理方式を統一
+* `改善` プラグインの説明を簡潔にし, 多言語リソースの句読点を統一
 * `依存関係` `com.google.mlkit:barcode-scanning:17.3.0` を統合
 
 ##### その他のリリース履歴
 
-* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/.changelog/CHANGELOG-ja.md)
+* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/app/src/main/assets/doc/CHANGELOG-ja.md)
 
 ******
 

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">用于 AutoJs6 的 Google ML Kit 端侧条码扫描插件</string>
+    <string name="plugin_description">基于 Google ML Kit 的端侧条码扫描</string>
 </resources>

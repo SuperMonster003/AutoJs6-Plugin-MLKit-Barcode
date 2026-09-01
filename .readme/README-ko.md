@@ -8,15 +8,11 @@
     </picture>
   </p>
 
-  <p>AutoJs6용 Google ML Kit 바코드 스캐너 플러그인</p>
+  <p>Google ML Kit 기반 온디바이스 바코드 스캔</p>
 
   <p>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?label=Release"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=A24232&label=Issues"/></a>
-    <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/commit/3f1ec5c271c17fd39af76b6bff20b1b047996ec9"><img alt="Created" src="https://img.shields.io/date/1783229834?color=2e7d32&label=Created"/></a>
-    <br>
-    <a href="https://developer.android.com/studio/archive"><img alt="Android Studio" src="https://img.shields.io/badge/Android%20Studio-2023.3+-B64FC8"/></a>
-    <a href="https://www.jetbrains.com/idea/download/other.html"><img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-2023.3+-EE4677"/></a>
     <a href="https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode?color=534BAE&label=License"/></a>
   </p>
 </div>
@@ -115,7 +111,7 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 # v1.0.0
 
-###### 2026/07/05
+###### 2026/09/01
 
 * `추가` 플러그인 ID `mlkit-barcode`, 엔진 `mlkit-barcode`인 ML Kit Barcode 플러그인 서비스 추가
 * `추가` `org.autojs.plugin.MLKIT_BARCODE`를 통한 호스트 검색 및 호출 추가
@@ -126,11 +122,13 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 * `추가` `arm64-v8a`/`armeabi-v7a`/`x86_64`/`x86` 및 `universal` APK용 ABI 분리 빌드 추가
 * `개선` Google ML Kit barcode scanning 의존성, 네이티브 라이브러리, 모델 에셋을 AutoJs6 호스트 APK 외부에 유지
 * `개선` 릴리스 APK 파일 이름에 버전과 ABI 변형 포함
+* `개선` README 레이아웃과 Gradle 플랫폼 버전 관리 방식을 통일
+* `개선` 플러그인 설명을 간결하게 다듬고 다국어 리소스의 문장 부호를 통일
 * `의존성` `com.google.mlkit:barcode-scanning:17.3.0` 통합
 
 ##### 더 많은 릴리스 기록
 
-* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/.changelog/CHANGELOG-ko.md)
+* [CHANGELOG.md](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/app/src/main/assets/doc/CHANGELOG-ko.md)
 
 ******
 

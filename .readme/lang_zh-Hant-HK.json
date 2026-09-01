@@ -1,7 +1,7 @@
 {
   "$name": "繁體中文 (香港)",
   "text_current_lowercase": "目前",
-  "text_plugin_synopsis": "用於 AutoJs6 的 Google ML Kit 條碼掃描插件",
+  "text_plugin_synopsis": "基於 Google ML Kit 的端側條碼掃描",
   "h3_languages_with_ascii": "語言 (Languages)",
   "p_languages_all_supported_for_readme": "目前 README.md 支援以下語言",
   "h3_introduction": "簡介",

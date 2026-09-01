@@ -6,7 +6,7 @@
   "changelog_label_dependency": "依賴",
   "$data": {
     "v1.0.0": {
-      "released_date": "2026/07/05",
+      "released_date": "2026/09/01",
       "feature": [
         "ML Kit Barcode 外掛服務, 外掛 ID 為 `mlkit-barcode`, 引擎為 `mlkit-barcode`",
         "支援透過 `org.autojs.plugin.MLKIT_BARCODE` 探索並呼叫外掛",
@@ -18,7 +18,9 @@
       ],
       "improvement": [
         "將 Google ML Kit 條碼掃描依賴, 原生程式庫和模型資產保持在 AutoJs6 宿主 APK 外部",
-        "發佈 APK 檔名包含版本號和 ABI 變體"
+        "發佈 APK 檔名包含版本號和 ABI 變體",
+        "統一 README 版式與 Gradle 平台版本管理方式",
+        "精簡外掛描述並規範多語言資源中的標點符號"
       ],
       "dependency": [
         "整合 `com.google.mlkit:barcode-scanning:17.3.0`"

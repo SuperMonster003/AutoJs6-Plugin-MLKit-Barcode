@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="plugin_description">AutoJs6용 Google ML Kit 온디바이스 바코드 스캐너 플러그인</string>
+    <string name="plugin_description">Google ML Kit 기반 온디바이스 바코드 스캔</string>
 </resources>
