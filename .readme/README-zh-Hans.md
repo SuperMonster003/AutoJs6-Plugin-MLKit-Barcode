@@ -109,6 +109,12 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 ******
 
+# v1.0.1
+
+###### 2026/09/11
+
+* `优化` 构建阶段校验 64 位原生库的 16 KB 页大小对齐, 检查 manifest 契约并输出 JSON 报告
+
 # v1.0.0
 
 ###### 2026/09/01
@@ -172,3 +178,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - Google ML Kit Barcode Scanning 文档: https://developers.google.com/ml-kit/vision/barcode-scanning/android
 - 项目仓库: https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/docs/16kb.md)

@@ -109,6 +109,12 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 
 ******
 
+# v1.0.1
+
+###### 2026/09/11
+
+* `Improvement` Build verification of 16 KB page alignment for 64-bit native libraries, including manifest contract checks and JSON reports
+
 # v1.0.0
 
 ###### 2026/09/01
@@ -172,3 +178,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - Google ML Kit Barcode Scanning documentation: https://developers.google.com/ml-kit/vision/barcode-scanning/android
 - Project repository: https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/docs/16kb.md)

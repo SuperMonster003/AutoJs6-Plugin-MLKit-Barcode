@@ -109,6 +109,12 @@ EAN_13, EAN_8, ITF, UPC_A, UPC_E
 
 ******
 
+# v1.0.1
+
+###### 2026/09/11
+
+* `改善` 64 ビットのネイティブライブラリの 16 KB ページアラインメントをビルド時に検証, manifest 契約の検査と JSON レポートに対応
+
 # v1.0.0
 
 ###### 2026/09/01
@@ -172,3 +178,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - Google ML Kit Barcode Scanning ドキュメント: https://developers.google.com/ml-kit/vision/barcode-scanning/android
 - プロジェクトリポジトリ: https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/docs/16kb.md)

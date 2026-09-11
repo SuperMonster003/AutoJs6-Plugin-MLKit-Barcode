@@ -139,3 +139,6 @@ app/src/main/res/raw-*/plugin_instruction.md
 
 - {{ text_link_mlkit_barcode_scanning }}: {{ mlkit_barcode_scanning_url }}
 - {{ text_link_repo }}: {{ repo_url }}
+
+
+[16 KB page alignment and build verification](https://github.com/SuperMonster003/AutoJs6-Plugin-MLKit-Barcode/blob/master/docs/16kb.md)

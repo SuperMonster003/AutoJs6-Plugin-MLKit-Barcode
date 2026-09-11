@@ -1,3 +1,4 @@
+# Native dependency upgrades must pass :app:verifyNativePageAlignment (64-bit ELF and APK ZIP alignment).
 [versions]
 
 #deprecated   : Only retained for dependencies of certain libraries (such as MQTT)
