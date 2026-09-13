@@ -4,6 +4,14 @@
 
 ******
 
+# v1.0.2
+
+###### 2026/09/13
+
+* `Correctif` Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé
+* `Amelioration` Validation des versions, signatures et variantes complètes des APK avant la création des fichiers à télécharger
+* `Amelioration` Les images peuvent contenir jusqu'à 16777216 pixels
+
 # v1.0.1
 
 ###### 2026/09/11

@@ -13,7 +13,8 @@
     "Admite filtros de formato de codigo de barras, limites de resultados y deteccion de codigos de barras potenciales de ML Kit.",
     "Devuelve valores sin procesar, valores de visualizacion, bytes sin procesar, nombres de formato, nombres de tipo de valor, rectangulos delimitadores, puntos de esquina y JSON de carga util estructurada.",
     "Los metadatos del complemento, las instrucciones de uso, el README y el CHANGELOG estan localizados para espanol/frances/ruso/arabe/japones/coreano/ingles/chino simplificado/chino tradicional de Hong Kong/chino tradicional de Taiwan.",
-    "Basado en `{{ google_mlkit_barcode_dependency }}`."
+    "Basado en `{{ google_mlkit_barcode_dependency }}`.",
+    "Las imágenes admiten hasta 16777216 píxeles"
   ],
   "h3_usage": "Uso",
   "p_usage_service": "El anfitrion descubre el servicio mediante esta action",

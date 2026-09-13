@@ -5,6 +5,16 @@
   "changelog_label_improvement": "Improvement",
   "changelog_label_dependency": "Dependency",
   "$data": {
+    "v1.0.2": {
+      "released_date": "2026/09/13",
+      "improvement": [
+        "Validate release APK versions, signing and the complete variant set before creating download artifacts",
+        "Images may contain at most 16777216 pixels"
+      ],
+      "fix": [
+        "Plugin center version and ABI information matches the installed plugin APK"
+      ]
+    },
     "v1.0.1": {
       "released_date": "2026/09/11",
       "improvement": [

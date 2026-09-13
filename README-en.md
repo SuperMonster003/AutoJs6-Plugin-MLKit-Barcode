@@ -56,6 +56,7 @@ The AutoJs6 ML Kit Barcode plugin provides Google ML Kit powered on-device barco
 - Returns raw values, display values, raw bytes, format names, value type names, bounding boxes, corner points, and structured payload JSON.
 - Plugin metadata, usage instructions, README, and changelog are localized for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese.
 - Built on `com.google.mlkit:barcode-scanning:17.3.0`.
+- Images may contain at most 16777216 pixels
 
 ******
 
@@ -108,6 +109,14 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 ### Release History
 
 ******
+
+# v1.0.2
+
+###### 2026/09/13
+
+* `Fix` Plugin center version and ABI information matches the installed plugin APK
+* `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
+* `Improvement` Images may contain at most 16777216 pixels
 
 # v1.0.1
 

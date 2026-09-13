@@ -4,6 +4,14 @@
 
 ******
 
+# v1.0.2
+
+###### 2026/09/13
+
+* `Correccion` La versión y las ABI del centro de complementos coinciden con el APK instalado
+* `Mejora` Validación de las versiones, firmas y variantes completas de los APK antes de crear los archivos de descarga
+* `Mejora` Las imágenes admiten hasta 16777216 píxeles
+
 # v1.0.1
 
 ###### 2026/09/11

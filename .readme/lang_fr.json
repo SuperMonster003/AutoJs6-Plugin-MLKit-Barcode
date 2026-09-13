@@ -13,7 +13,8 @@
     "Prend en charge les filtres de formats de codes-barres, les limites de resultats et la detection des codes-barres potentiels de ML Kit.",
     "Renvoie les valeurs brutes, les valeurs affichees, les octets bruts, les noms de format, les noms de type de valeur, les rectangles englobants, les points d'angle et le JSON de charge utile structuree.",
     "Les metadonnees du plugin, les instructions d'utilisation, le README et le CHANGELOG sont localises en espagnol/francais/russe/arabe/japonais/coreen/anglais/chinois simplifie/chinois traditionnel de Hong Kong/chinois traditionnel de Taiwan.",
-    "Base sur `{{ google_mlkit_barcode_dependency }}`."
+    "Base sur `{{ google_mlkit_barcode_dependency }}`.",
+    "Les images peuvent contenir jusqu'à 16777216 pixels"
   ],
   "h3_usage": "Utilisation",
   "p_usage_service": "L'hote decouvre le service via cette action",
