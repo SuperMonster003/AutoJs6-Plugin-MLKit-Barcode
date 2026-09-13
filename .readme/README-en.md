@@ -117,6 +117,7 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 
 * `Fix` Plugin center version and ABI information matches the installed plugin APK
 * `Fix` Encoded image input is limited to 64 MiB and supports file descriptors and pipes
+* `Fix` Version dates use a consistent English format
 * `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
 * `Improvement` Images may contain at most 16777216 pixels
 
