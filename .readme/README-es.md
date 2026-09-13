@@ -57,6 +57,7 @@ El complemento AutoJs6 ML Kit Barcode proporciona deteccion de codigos de barras
 - Los metadatos del complemento, las instrucciones de uso, el README y el CHANGELOG estan localizados para espanol/frances/ruso/arabe/japones/coreano/ingles/chino simplificado/chino tradicional de Hong Kong/chino tradicional de Taiwan.
 - Basado en `com.google.mlkit:barcode-scanning:17.3.0`.
 - Las imágenes admiten hasta 16777216 píxeles
+- La imagen codificada admite hasta 64 MiB mediante descriptores de archivo y tuberías
 
 ******
 
@@ -115,6 +116,7 @@ Cada `BarcodeResult` puede incluir estos campos: `rawValue`, `displayValue`, `ra
 ###### 2026/09/13
 
 * `Correccion` La versión y las ABI del centro de complementos coinciden con el APK instalado
+* `Correccion` La imagen codificada admite hasta 64 MiB mediante descriptores de archivo y tuberías
 * `Mejora` Validación de las versiones, firmas y variantes completas de los APK antes de crear los archivos de descarga
 * `Mejora` Las imágenes admiten hasta 16777216 píxeles
 

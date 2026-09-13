@@ -25,6 +25,10 @@ import org.autojs.plugin.mlkit.barcode.api.BarcodeOptions;
 import org.junit.Test;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -86,6 +90,24 @@ public class PluginBinderContractTest {
                     try (ParcelFileDescriptor fd = ParcelFileDescriptor.open(image, ParcelFileDescriptor.MODE_READ_ONLY)) {
                         assertNotNull(plugin.detect(fd, new BarcodeOptions()));
                     }
+                    ParcelFileDescriptor[] pipe = ParcelFileDescriptor.createPipe();
+                    AtomicReference<Throwable> pipeFailure = new AtomicReference<>();
+                    Thread writer = new Thread(() -> {
+                        try (InputStream source = new FileInputStream(image);
+                             OutputStream target = new ParcelFileDescriptor.AutoCloseOutputStream(pipe[1])) {
+                            byte[] bytes = new byte[8192];
+                            int count;
+                            while ((count = source.read(bytes)) != -1) target.write(bytes, 0, count);
+                        } catch (Throwable error) { pipeFailure.set(error); }
+                    }, "binder-image-pipe");
+                    writer.setDaemon(true);
+                    writer.start();
+                    try (ParcelFileDescriptor fd = pipe[0]) {
+                        assertNotNull(plugin.detect(fd, new BarcodeOptions()));
+                    }
+                    writer.join(10000);
+                    assertFalse("Image pipe writer leaked", writer.isAlive());
+                    assertNull(pipeFailure.get());
                     try {
                         plugin.detect(null, new BarcodeOptions());
                         fail("Null input must be rejected");

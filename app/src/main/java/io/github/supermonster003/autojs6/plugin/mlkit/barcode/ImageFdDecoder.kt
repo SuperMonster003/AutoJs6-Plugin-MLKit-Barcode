@@ -10,8 +10,7 @@ object ImageFdDecoder {
     fun decode(imageFd: ParcelFileDescriptor): Bitmap {
         try {
             imageFd.use { descriptor ->
-                org.autojs.plugin.runtime.ImageInputBounds.validateEncoded(descriptor.fileDescriptor)
-                return BitmapFactory.decodeFileDescriptor(descriptor.fileDescriptor)
+                return org.autojs.plugin.runtime.ImageInputBounds.decodeEncoded(descriptor.fileDescriptor)
                     ?: error("decode image failed")
             }
         } catch (e: IOException) {

@@ -14,7 +14,8 @@
     "Renvoie les valeurs brutes, les valeurs affichees, les octets bruts, les noms de format, les noms de type de valeur, les rectangles englobants, les points d'angle et le JSON de charge utile structuree.",
     "Les metadonnees du plugin, les instructions d'utilisation, le README et le CHANGELOG sont localises en espagnol/francais/russe/arabe/japonais/coreen/anglais/chinois simplifie/chinois traditionnel de Hong Kong/chinois traditionnel de Taiwan.",
     "Base sur `{{ google_mlkit_barcode_dependency }}`.",
-    "Les images peuvent contenir jusqu'à 16777216 pixels"
+    "Les images peuvent contenir jusqu'à 16777216 pixels",
+    "Les images encodées sont limitées à 64 MiB avec prise en charge des fichiers et des tubes"
   ],
   "h3_usage": "Utilisation",
   "p_usage_service": "L'hote decouvre le service via cette action",

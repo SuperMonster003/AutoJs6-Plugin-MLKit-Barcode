@@ -14,7 +14,8 @@
     "Returns raw values, display values, raw bytes, format names, value type names, bounding boxes, corner points, and structured payload JSON.",
     "Plugin metadata, usage instructions, README, and changelog are localized for Spanish, French, Russian, Arabic, Japanese, Korean, English, Simplified Chinese, Hong Kong Traditional Chinese, and Taiwan Traditional Chinese.",
     "Built on `{{ google_mlkit_barcode_dependency }}`.",
-    "Images may contain at most 16777216 pixels"
+    "Images may contain at most 16777216 pixels",
+    "Encoded image input is limited to 64 MiB and supports file descriptors and pipes"
   ],
   "h3_usage": "Usage",
   "p_usage_service": "The host discovers the service through this action",
