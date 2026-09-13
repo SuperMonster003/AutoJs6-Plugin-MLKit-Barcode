@@ -5,6 +5,16 @@
   "changelog_label_improvement": "优化",
   "changelog_label_dependency": "依赖",
   "$data": {
+    "v1.0.2": {
+      "released_date": "2026/09/13",
+      "improvement": [
+        "发布下载文件生成前校验 APK 版本, 签名与完整变体集合",
+        "图像最多包含 16777216 个像素"
+      ],
+      "fix": [
+        "插件中心显示的版本与 ABI 信息匹配实际安装的 APK"
+      ]
+    },
     "v1.0.1": {
       "released_date": "2026/09/11",
       "improvement": [

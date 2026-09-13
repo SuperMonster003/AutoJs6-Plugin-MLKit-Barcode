@@ -39,10 +39,8 @@ class MlKitBarcodePluginService : Service() {
                 id = BuildConfig.PLUGIN_ID
                 engine = BuildConfig.PLUGIN_ENGINE
                 variant = BuildConfig.PLUGIN_VARIANT
-                versionName = BuildConfig.VERSION_NAME
-                versionCode = BuildConfig.VERSION_CODE.toLong()
                 versionDate = BuildConfig.VERSION_DATE
-                supportedAbis = SUPPORTED_ABIS
+                org.autojs.plugin.runtime.InstalledPackageIdentity.apply(this@MlKitBarcodePluginService, this)
                 capabilities = Bundle().apply {
                     putInt(PluginCapabilityKeys.REQUIRES_HOST_VERSION, 3923)
                     putInt(BarcodePluginCapabilityKeys.CONTRACT_VERSION, 1)

@@ -13,7 +13,8 @@
     "支援依格式過濾條碼, 限制最大回傳數量, 以及啟用 ML Kit 的潛在條碼偵測.",
     "回傳原始值, 顯示值, 原始位元組, 格式名稱, 值類型名稱, 外接矩形, 角點座標和結構化載荷 JSON.",
     "外掛資訊, 使用說明, README 與 CHANGELOG 均支援西班牙語/法語/俄語/阿拉伯語/日語/韓語/英語/簡體中文/香港繁體/台灣繁體.",
-    "基於 `{{ google_mlkit_barcode_dependency }}`."
+    "基於 `{{ google_mlkit_barcode_dependency }}`.",
+    "影像最多包含 16777216 個像素"
   ],
   "h3_usage": "使用說明",
   "p_usage_service": "宿主透過以下 action 探索服務",

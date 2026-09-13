@@ -13,7 +13,8 @@
     "支持按格式过滤条码, 限制最大返回数量, 以及启用 ML Kit 的潜在条码检测.",
     "返回原始值, 显示值, 原始字节, 格式名称, 值类型名称, 外接矩形, 角点坐标和结构化载荷 JSON.",
     "插件信息, 使用说明, README 与 CHANGELOG 均支持西班牙语/法语/俄语/阿拉伯语/日语/韩语/英语/简体中文/香港繁体/台湾繁体.",
-    "基于 `{{ google_mlkit_barcode_dependency }}`."
+    "基于 `{{ google_mlkit_barcode_dependency }}`.",
+    "图像最多包含 16777216 个像素"
   ],
   "h3_usage": "使用说明",
   "p_usage_service": "宿主通过以下 action 发现服务",

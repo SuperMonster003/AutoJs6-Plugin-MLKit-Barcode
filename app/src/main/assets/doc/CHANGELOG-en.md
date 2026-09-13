@@ -4,6 +4,14 @@
 
 ******
 
+# v1.0.2
+
+###### 2026/09/13
+
+* `Fix` Plugin center version and ABI information matches the installed plugin APK
+* `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
+* `Improvement` Images may contain at most 16777216 pixels
+
 # v1.0.1
 
 ###### 2026/09/11
