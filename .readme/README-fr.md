@@ -57,6 +57,7 @@ Le plugin AutoJs6 ML Kit Barcode fournit a AutoJs6 une detection de codes-barres
 - Les metadonnees du plugin, les instructions d'utilisation, le README et le CHANGELOG sont localises en espagnol/francais/russe/arabe/japonais/coreen/anglais/chinois simplifie/chinois traditionnel de Hong Kong/chinois traditionnel de Taiwan.
 - Base sur `com.google.mlkit:barcode-scanning:17.3.0`.
 - Les images peuvent contenir jusqu'à 16777216 pixels
+- Les images encodées sont limitées à 64 MiB avec prise en charge des fichiers et des tubes
 
 ******
 
@@ -115,6 +116,7 @@ Chaque `BarcodeResult` peut inclure ces champs: `rawValue`, `displayValue`, `raw
 ###### 2026/09/13
 
 * `Correctif` Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé
+* `Correctif` Les images encodées sont limitées à 64 MiB avec prise en charge des fichiers et des tubes
 * `Amelioration` Validation des versions, signatures et variantes complètes des APK avant la création des fichiers à télécharger
 * `Amelioration` Les images peuvent contenir jusqu'à 16777216 pixels
 

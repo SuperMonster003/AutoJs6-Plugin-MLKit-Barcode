@@ -12,7 +12,8 @@
         "Images may contain at most 16777216 pixels"
       ],
       "fix": [
-        "Plugin center version and ABI information matches the installed plugin APK"
+        "Plugin center version and ABI information matches the installed plugin APK",
+        "Encoded image input is limited to 64 MiB and supports file descriptors and pipes"
       ]
     },
     "v1.0.1": {

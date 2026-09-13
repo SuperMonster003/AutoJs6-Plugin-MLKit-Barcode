@@ -12,7 +12,8 @@
         "Les images peuvent contenir jusqu'à 16777216 pixels"
       ],
       "fix": [
-        "Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé"
+        "Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé",
+        "Les images encodées sont limitées à 64 MiB avec prise en charge des fichiers et des tubes"
       ]
     },
     "v1.0.1": {
