@@ -111,6 +111,12 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 
 ******
 
+# v1.0.4
+
+###### 2026/09/16
+
+* `Improvement` Raise targetSdk to 37 (Android 17) after compileSdk; the plugin's behavior does not depend on the new target
+
 # v1.0.3
 
 ###### 2026/09/15
@@ -126,12 +132,6 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 * `Fix` Version dates use a consistent English format
 * `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
 * `Improvement` Images may contain at most 16777216 pixels
-
-# v1.0.1
-
-###### 2026/09/11
-
-* `Improvement` Build verification of 16 KB page alignment for 64-bit native libraries, including manifest contract checks and JSON reports
 
 ##### For more release history
 
