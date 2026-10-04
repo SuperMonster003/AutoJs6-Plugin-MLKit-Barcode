@@ -111,6 +111,12 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 
 ******
 
+# v1.0.5
+
+###### 2026/10/04
+
+* `Improvement` Plugin Center icons use the sizes, positions, light and dark artwork, and circular backgrounds adjusted in Icon Studio, retaining reproducible sources and parameters
+
 # v1.0.4
 
 ###### 2026/09/19
@@ -123,16 +129,6 @@ Each `BarcodeResult` can include these fields: `rawValue`, `displayValue`, `rawB
 ###### 2026/09/15
 
 * `Improvement` Raise compileSdk to 37 (Android 17); targetSdk stays at 36 until the behavior that depends on the target is verified
-
-# v1.0.2
-
-###### 2026/09/13
-
-* `Fix` Plugin center version and ABI information matches the installed plugin APK
-* `Fix` Encoded image input is limited to 64 MiB and supports file descriptors and pipes
-* `Fix` Version dates use a consistent English format
-* `Improvement` Validate release APK versions, signing and the complete variant set before creating download artifacts
-* `Improvement` Images may contain at most 16777216 pixels
 
 ##### For more release history
 
