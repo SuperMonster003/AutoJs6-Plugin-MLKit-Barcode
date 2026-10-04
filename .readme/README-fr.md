@@ -111,6 +111,12 @@ Chaque `BarcodeResult` peut inclure ces champs: `rawValue`, `displayValue`, `raw
 
 ******
 
+# v1.0.5
+
+###### 2026/10/04
+
+* `Amelioration` Les icônes du centre de plugins utilisent les tailles, positions, images claires et sombres et fonds circulaires réglés dans Icon Studio, avec les sources et paramètres permettant de les reproduire
+
 # v1.0.4
 
 ###### 2026/09/19
@@ -123,16 +129,6 @@ Chaque `BarcodeResult` peut inclure ces champs: `rawValue`, `displayValue`, `raw
 ###### 2026/09/15
 
 * `Amelioration` compileSdk passe à 37 (Android 17) ; targetSdk reste à 36 jusqu'à la vérification du comportement dépendant de la cible
-
-# v1.0.2
-
-###### 2026/09/13
-
-* `Correctif` Les informations de version et d'ABI du centre des plugins correspondent à l'APK installé
-* `Correctif` Les images encodées sont limitées à 64 MiB avec prise en charge des fichiers et des tubes
-* `Correctif` Les dates de version utilisent un format anglais uniforme
-* `Amelioration` Validation des versions, signatures et variantes complètes des APK avant la création des fichiers à télécharger
-* `Amelioration` Les images peuvent contenir jusqu'à 16777216 pixels
 
 ##### Pour plus d'historique des versions
 
